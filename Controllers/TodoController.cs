@@ -15,12 +15,13 @@ public class TodoController : ControllerBase
         {
             new TodoItem { Id = 1, Title = "Todo 1", IsCompleted = false },
             new TodoItem { Id = 2, Title = "Todo 2", IsCompleted = true },
-            new TodoItem { Id = 3, Title = "Todo 3", IsCompleted = false }
+            new TodoItem { Id = 3, Title = "Todo 3", IsCompleted = false },
+            new TodoItem { Id = 4, Title = "Todo 4", IsCompleted = false }
         };
     }
 
     [HttpGet]
-    public IActionResult Get()
+    public IActionResult Get() 
     {
         return Ok(_todoItems);
     }
